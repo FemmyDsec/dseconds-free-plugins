@@ -990,53 +990,6 @@ module DsecondsLEDWallFree
       end
 
       # ═══════════════════════════════════════════════════════════════════════
-      # CURVED WALL — TANGENT-WALKING ENGINE  (v2.42)
-      #
-      # Algorithm:
-      #   1. Read the selected edge/arc from the model. SketchUp stores arcs
-      #      and splines as sequences of straight edges sharing vertices, so
-      #      we collect all connected co-planar edges as an ordered polyline.
-      #   2. Walk along the polyline from the start vertex:
-      #      a. At the current position, compute the local tangent direction
-      #         from the polyline segment under the cursor.
-      #      b. Place a panel whose LEFT edge aligns with the current position,
-      #         oriented so its face normal is perpendicular to the tangent
-      #         (i.e. the panel FRONT faces the tangent direction — "inward").
-      #      c. Advance the cursor to the RIGHT edge of the placed panel
-      #         (= current_pos + panel_width along the panel's local X axis).
-      #      d. Project that right-edge point onto the polyline to find the
-      #         new "foot" on the curve and compute the new tangent there.
-      #      e. Compute the hinge angle between consecutive panel normals
-      #         (= angle between the two tangent vectors in the XY plane).
-      #      f. Snap the hinge angle to the nearest allowed_angle_deg step
-      #         defined in the database (convex > 0 / concave < 0).
-      #         If the snapped angle exceeds max_concave/max_convex, clamp it.
-      #      g. Apply the snapped rotation to the next panel.
-      #      h. Stop when the cursor would travel PAST the end of the curve
-      #         (truncate — never overshoot).
-      #   3. Build one SketchUp group per row of panels (height bands kept
-      #      from the mixed-solver), stacked vertically.
-      #
-      # Coordinate convention (same as flat wall):
-      #   X = horizontal width of the wall
-      #   Y = depth (into/out of screen) — panels extrude in -Y
-      #   Z = vertical height
-      #
-      # The polyline is assumed to lie in the XY plane (or close to it).
-      # Vertical curvature is not supported in v2.42.
-      # ═══════════════════════════════════════════════════════════════════════
-
-      # ── helpers ─────────────────────────────────────────────────────────────
-
-      # Extract an ordered list of 2-D points (x,y in model units) from the
-      # selected edge/arc. SketchUp arcs are stored as a sequence of short
-      # straight edges; we collect them by walking the "curve" entity if
-      # available, otherwise by following edge connectivity.
-      # ── CURVE / EDGE → ordered polyline ─────────────────────────────────────
-      # Accepts a single edge OR an array of edges (SU selects all arc edges at
-      # once). Handles Sketchup::ArcCurve, Sketchup::Curve, and plain edges.
-      # Returns an Array of Geom::Point3d ordered from one open end to the other.
-      # ─────────────────────────────────────────────────────────────────────────
       def self.load_database
         data     = JSON.parse(File.read(DB_PATH))
         products = data['products'] || []
