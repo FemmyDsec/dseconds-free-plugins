@@ -8,8 +8,8 @@ Download and install via SketchUp Extension Manager.
 | Plugin | Version | Download |
 |--------|---------|----------|
 | LED Wall Designer FREE | v1.0.2 | [Download RBZ](dseconds_led_wall_designer_FREE_v1_0_2.rbz) |
-| Truss Designer FREE | v1.0.2 | [Download RBZ](dseconds_truss_designer_FREE_v1_0_2.rbz) |
-| VP4 Projector Designer FREE | v1.0.0 | [Download RBZ](dseconds_projector_designer_FREE_v1_0_0.rbz) |
+| Truss Designer FREE | v1.0.3 | [Download RBZ](dseconds_truss_designer_FREE_v1_0_3.rbz) |
+| Projector Designer FREE | v1.1.0 | [Download RBZ](dseconds_projector_designer_FREE_v1_1_0.rbz) |
 
 ## Installation
 
