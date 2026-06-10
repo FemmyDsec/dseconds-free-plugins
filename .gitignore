@@ -1,0 +1,13 @@
+# Backups / scratch
+*.bak
+*.bak*
+*.tmp
+*~
+
+# Python
+__pycache__/
+*.pyc
+
+# OS
+.DS_Store
+Thumbs.db
