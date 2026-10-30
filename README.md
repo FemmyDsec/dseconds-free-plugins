@@ -1,26 +1,30 @@
-# Dseconds AV Tools — FREE Plugins
+# Dseconds AV Tools — SketchUp plugins
 
-SketchUp plugins for AV and live events professionals.
-Download and install via SketchUp Extension Manager.
+SketchUp plugins for AV and live events professionals: LED walls, truss and projection.
 
-## Available FREE plugins
+Each plugin is **one unified, Trimble-signed download**. It runs in Free mode with no time limit, and a PRO licence key unlocks PRO in the same installation — no reinstall.
 
-| Plugin | Version | Download |
-|--------|---------|----------|
-| LED Wall Designer FREE | v1.0.2 | [Download RBZ](dseconds_led_wall_designer_FREE_v1_0_2.rbz) |
-| Truss Designer FREE | v1.0.3 | [Download RBZ](dseconds_truss_designer_FREE_v1_0_3.rbz) |
-| Projector Designer FREE | v1.1.0 | [Download RBZ](dseconds_projector_designer_FREE_v1_1_0.rbz) |
+## Current downloads
+
+| Plugin             | Version | Download |
+|--------------------|---------|----------|
+| Truss Designer     | 4.7.1   | [Download RBZ](https://github.com/FemmyDsec/dseconds-free-plugins/releases/download/truss-v4.7.1/Dseconds_Truss_Designer_4.7.1.rbz) |
+| LED Wall Designer  | 3.1.1   | [Download RBZ](https://github.com/FemmyDsec/dseconds-free-plugins/releases/download/led-wall-v3.1.1/Dseconds_LED_Wall_Designer_3.1.1.rbz) |
+| Projector Designer | 1.4.1   | [Download RBZ](https://github.com/FemmyDsec/dseconds-free-plugins/releases/download/projector-v1.4.1/Dseconds_Projector_Designer_1.4.1.rbz) |
+
+Always check [dseconds.com](https://dseconds.com) for the latest version.
 
 ## Installation
 
 1. Download the .rbz file
-2. Open SketchUp
+2. Open SketchUp (2024 or later, Windows or macOS)
 3. Extensions → Extension Manager → Install Extension
 4. Select the downloaded .rbz file
 
 ## Upgrade to PRO
 
-Full database, UDL calculations, BOM export and more at [dseconds.com](https://dseconds.com)
+Full catalogue, reports and exports: [dseconds.com](https://dseconds.com)
 
----
+* * *
+
 Dseconds AV Tools © 2026
